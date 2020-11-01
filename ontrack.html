@@ -8,23 +8,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ontrack Monitoring</title>
   <link rel='icon' href='images/favicon/alex_favicons-01.png' type ='image/png'>
-
   <link rel="stylesheet" href="stylesheets/ontrack.css"/>
+
+  <script>
+    function logout() {var answer = window.confirm("Are you sure you would like to logout?");
+      if (answer) {
+        pageRedirect();
+      }
+      else {
+        //some code
+      }
+    }
+
+    function pageRedirect(){
+     var delay = 250; // time in milliseconds
+     var close = false
+     setTimeout(function(){
+      window.location = "login.html";
+      return false;
+      close = false
+     },delay);
+
+     if(window.alert){
+      return true
+     }
+
+    }
+
+
+  </script>
+
+
 </head>
 
 <body>
-
   <header>
     <img class="logo" src="images/logo/alex_logo_transparent_no_name-05.png" alt="Alex Schneider logo" />
 
     <nav class="navbar">
       <a href="ontrack.html">Home/Portfolio</a>
-      <a href="javascript:alert()">Account History</a>
+      <a href="">Account History</a>
       <a href="">Watch List</a>
       <a href="">News Feed</a>
       <a href="">Connect With an Advisor</a>
       <a href="">Settings</a>
-      <a href="">Logout</a>
+      <a href="javascript:logout();">Logout</a>
       <!--<a href=".html"></a>-->
     </nav>
 
