@@ -34,8 +34,6 @@
      }
 
     }
-
-
   </script>
 
 
@@ -47,22 +45,33 @@
 
     <nav class="navbar">
       <a href="ontrack.html">Home/Portfolio</a>
-      <a href="">Account History</a>
-      <a href="">Watch List</a>
-      <a href="">News Feed</a>
-      <a href="">Connect With an Advisor</a>
-      <a href="">Settings</a>
+      <a href="javascript:alert('Click here to view your transaction history.')">Account History</a>
+      <a href="javascript:alert('Click here to access our broad education materials about the stock market and personal finance.')">Educational Materials</a>
+      <a href="javascript:alert('Click here to change what notifications you want to get and customize current notifications')">Watch List</a>
+      <a href="javascript:alert('Click here to view your customizable news feed, and to change what you see in your news feed.')">News Feed</a>
+      <a href="javascript:alert('Click here to connect with a financial advisor over text chat or video call.')">Connect With an Advisor</a>
+      <a href="javascript:alert('Click here to modify your security settings and other miscellaneous settings.')">Settings</a>
       <a href="javascript:logout();">Logout</a>
       <!--<a href=".html"></a>-->
     </nav>
 
   </header>
 
-  <div class = "charts">
-    <img class="sample" src="ontrackmaterials/demo1.png" alt="stock image 1"/>
-    <img class="sample" src="ontrackmaterials/demo2.png" alt="stock image 2"/>
-    <img class="sample" src="ontrackmaterials/demo3.jpg" alt="stock image 3" />
-  </div class = "charts">
+ <main>
+    <div class="topim">
+      <img  src="ontrackmaterials/ontrackAcc.png" onclick="alert('Click here to look at a more detailed view of your Ontrack Monitoring account, or manage your investments.')" />
+      <img  src="ontrackmaterials/stats.png" onclick="alert('Click here to add or remove statistics that you would like to see on your homepage.')" />
+    </div>
+    <br>
+    <div class="botim">
+      <img src="ontrackmaterials/bank1.png" onclick="alert('Click here to look at a more detailed view of your Wells Fargo account, to manage your account, or to transfer funds to another account')"/>
+      <img src="ontrackmaterials/bank2.png" onclick="alert('Click here to look at a more detailed view of your Think Bank account, to manage your account, or to transfer funds to another account')"/>
+   </div>
+   <div class="chart">
+      <img src="ontrackmaterials/chart.png" onclick="alert('Click here to see a fullpage chart, from here you can also change how you would like the chart to be displayed and what you would like on the chart.')"/>
+   </div>
+
+ </main>
 
   <footer>
 
